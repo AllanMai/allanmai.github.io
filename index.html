@@ -22,19 +22,30 @@
     }
 
     .container-fluid {
-      padding: 60px 50px;
+      padding: 50px 50px;
     }
 
     .bg-1 {
       background-color: #cd005d;
       color: #ffffff;
-      padding: 100px 25px;
+      padding: 50px 25px;
     }
   </style>
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class="container">
+    <div class="row">
+      <nav class="col-sm-3" id="myScrollspy">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <a href="#section1">About Me</a>
+          <a href="#section2">My Priorities</a>
+          <a href="#section3">My Work</a>
+          </ul>
+        </nav>
+    </div>
+  </div>
 
   <div class="jumbotron text-center">
     <h1>Allan's Spatial Economics Oasis</h1>
@@ -43,16 +54,17 @@
     <img src="oasis.jpg" class="img-responsive center-block img-circle" style="width: 100%" alt="image">
   </div>
   <div class="container-fluid text-center">
-    <img src="Me.jpg" class="img-responsive center-block img-circle" style="width: 50%" alt="image">
     <h2>About Me</h2>
+    <img src="Me.jpg" class="img-responsive center-block img-circle" style="width: 50%" alt="image">
     <p>I am a first generation college student. In fact, my family hasn't had a college graduate
       for over three generations on either side. I am a father and husband as well. I am majoring in
       economics and geography at the same time. I enjoy learning and have since I was a small child.
       I love economics/econometrics and am fascinated by geospatial relationships. </p>
-    <p><strong>If you would like to contact me or see my LinkedIn</strong></p>  
-    <button id="bt_demo_toggle_speed" style="display:none">Click Here for My Email</button>
-    <p class="p_demo_toggle_speed"><strong>allanmai3@gmail.com</strong>.</p>
-    <button class="btn btn-default btn-lg"><a href="https://www.linkedin.com/in/allan-mai-3-econ/" target="_blank">My LinkedIn</a></button>
+    <p><strong>If you would like to contact me or see my LinkedIn</strong></p>
+    <button id="bt_demo_toggle_speed">Click Here for My Email</button>
+    <p class="p_demo_toggle_speed" style="display:none"><strong>allanmai3@gmail.com</strong>.</p>
+    <button class="btn btn-default btn-lg"><a href="https://www.linkedin.com/in/allan-mai-3-econ/" target="_blank">My
+        LinkedIn</a></button>
 
   </div>
 
